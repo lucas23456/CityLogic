@@ -123,3 +123,9 @@ body::-webkit-scrollbar-thumb {
 img{
   border-radius: 10px;
 }
+
+.material{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
