@@ -69,8 +69,8 @@ const two = new THREE.Mesh(new THREE.BoxGeometry(1, 1, 1), new THREE.MeshBasicMa
 
 scene.add(two);
 
-two.position.z = 14;
-two.position.x = 2;
+two.position.z = 15;
+two.position.x = 1;
 
 start.position.z = -5;
 start.position.x = 3;
