@@ -57,13 +57,13 @@ const fuckTexture = new THREE.TextureLoader().load();
 scene.background = fuckTexture;
 
 
-const startTexture = new THREE.TextureLoader().load('techno.jpg')
+const startTexture = new THREE.TextureLoader().load('/dist/techno.jpg')
 
 const start = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: startTexture}));
 
 scene.add(start);
 
-const twoTexture = new THREE.TextureLoader().load('metro.jpg');
+const twoTexture = new THREE.TextureLoader().load('/dist/metro.jpg');
 
 const two = new THREE.Mesh(new THREE.BoxGeometry(1, 1, 1), new THREE.MeshBasicMaterial({ map: twoTexture}));
 
@@ -158,4 +158,20 @@ function plusSlides(n) {
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
