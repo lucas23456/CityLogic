@@ -37,16 +37,10 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
-h2, h3, blockquote {
+h1, h2, h3, blockquote {
   font-family: elevon, sans-serif;
   font-weight: 700;
   font-style: normal;
-}
-
-h1{
-  font-family: elevon, sans-serif;
-  font-weight: 700;
-  font-size: 50px;
 }
 
 canvas {
@@ -57,7 +51,7 @@ canvas {
 
 header {
   background: var(--dark-bg);
-  grid-column: 2 / 11;
+  grid-column: 2 / 11 ;
   font-size: 2.3rem;
   padding: 2rem;
   margin-right: 500px;
@@ -113,4 +107,17 @@ body::-webkit-scrollbar {
  
 body::-webkit-scrollbar-thumb {
   background-color: #654168;
+}
+
+.gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 10px;
+  grid-column: 6 / 8;
+}
+
+img{
+  border-radius: 10px;
 }
