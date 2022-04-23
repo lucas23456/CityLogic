@@ -109,3 +109,15 @@ body::-webkit-scrollbar-thumb {
   background-color: #654168;
 }
 
+.gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 10px;
+  grid-column: 6 / 8;
+}
+
+img{
+  border-radius: 10px;
+}
