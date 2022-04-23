@@ -57,13 +57,13 @@ const fuckTexture = new THREE.TextureLoader().load();
 scene.background = fuckTexture;
 
 
-const startTexture = new THREE.TextureLoader().load('techno.jpg')
+const startTexture = new THREE.TextureLoader().load('/techno.jpg')
 
 const start = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: startTexture}));
 
 scene.add(start);
 
-const twoTexture = new THREE.TextureLoader().load('metro.jpg');
+const twoTexture = new THREE.TextureLoader().load('/metro.jpg');
 
 const two = new THREE.Mesh(new THREE.BoxGeometry(1, 1, 1), new THREE.MeshBasicMaterial({ map: twoTexture}));
 
