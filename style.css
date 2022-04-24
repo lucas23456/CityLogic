@@ -124,6 +124,10 @@ img{
   border-radius: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .material{
   margin-top: 100px;
   padding: 1rem;
