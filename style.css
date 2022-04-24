@@ -131,7 +131,7 @@ img{
   grid-column: 6 / 8;  
   background: var(--dark-bg);
   width: 570px;
-  height: 420px;
+  height: 450px;
 }
 
 html {
